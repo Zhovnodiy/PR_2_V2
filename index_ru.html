@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Практическое применение элементов CSS</title>
+    <link rel="stylesheet" href="StyleSheet.css">
+
+</head>
+<body>
+    <header>
+        <h1>Практическое применение элементов CSS</h1>
+    </header>
+
+    <nav>
+        <a href="#intro">Введение</a> |
+        <a href="#about">Обо мне</a> |
+        <a href="#skills">Навыки</a> |
+        <a href="#projects">Проекты</a> |
+        <a href="#resume">Резюме</a> |
+        <a href="#contact">Контакты</a>
+    </nav>
+    <div id="browserInfo"></div>
+    <div id="mathOutput"></div>
+    <section>
+        <h2>Выбор изображения</h2>
+        <form>
+            <input type="radio" name="pic" value="1"> Изображение 1
+            <input type="radio" name="pic" value="2"> Изображение 2
+            <input type="radio" name="pic" value="3"> Изображение 3
+            <input type="radio" name="pic" value="4"> Изображение 4
+            <input type="radio" name="pic" value="5"> Изображение 5
+        </form>
+        <div id="imageContainer"></div>
+    </section>
+
+    
+    <form>
+        <select onchange="goToPage(this)">
+            <option value="">-- Выберите страницу --</option>
+            <option value="index.html">Главная (UA)</option>
+            <option value="index_ru.html">Русский (RUS)</option>
+         
+        </select>
+    </form>
+
+    <button onclick="changeLanguage('UA')">UA</button>
+    <button onclick="changeLanguage('RUS')">RUS</button>
+
+    <section id="intro">
+        <h2>Введение</h2>
+        <ul>
+            <li>Годы опыта: 5+</li>
+            <li>Языки: JavaScript, C++, C#</li>
+            <li>Увлечен открытым кодом</li>
+        </ul>
+        <img src="photo/mem-dlja-programistiv.jpg" alt="Рабочее место разработчика" width="800" height="600">
+    </section>
+
+    <section id="about">
+        <h2>Обо мне</h2>
+        <p>Я увлеченный разработчик с образованием в области компьютерных наук. Я окончил Университет УУ в 2027 году. Мне нравится решать сложные задачи и создавать эффективное программное обеспечение.</p>
+        <h3>Хобби</h3>
+        <ol>
+            <li>Кодинг личных проектов</li>
+            <li>Чтение тех-блогов</li>
+            <li>Походы и активный отдых</li>
+        </ol>
+        <h3>Таблица образования</h3>
+        <table>
+            <tr>
+                <th>Степень</th>
+                <th>Учебное заведение</th>
+                <th>Год</th>
+            </tr>
+            <tr>
+                <td>Профессиональный младший бакалавр по компьютерным наукам</td>
+                <td>Колледж информационных технологий и землеустройства НАУ</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>Бакалавр по инженерии программного обеспечения</td>
+                <td>Университет УУ</td>
+                <td>2027</td>
+            </tr>
+        </table>
+        <img src="photo/0qdi5tlkfupah4zawg67mxhptbw.jpeg" alt="Личное фото" width="800" height="600">
+    </section>
+
+    <section id="skills">
+        <h2>Навыки</h2>
+        <p>Языки программирования: C++, Python, C#. Фреймворки: React, Node.js, Spring.</p>
+        <h3>Уровни навыков</h3>
+        <ul>
+            <li>C# - Продвинутый</li>
+            <li>Python - Средний</li>
+            <li>C++ - Эксперт</li>
+        </ul>
+        <h3>Таблица навыков</h3>
+        <table>
+            <tr>
+                <th>Навык</th>
+                <th>Уровень</th>
+                <th>Годы</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Эксперт</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Продвинутый</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Средний</td>
+                <td>3</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="projects">
+        <h2>Проекты</h2>
+        <p>Проект 1: Веб-приложение для управления задачами — создано с помощью React и Node.js. Проект 2: Модель машинного обучения для прогнозирования.</p>
+        <h3>Список проектов</h3>
+        <ol>
+            <li>Приложение для управления задачами</li>
+            <li>Прогнозатор ML</li>
+            <li>Прототип сайта электронной коммерции</li>
+        </ol>
+        <h3>Таблица деталей проектов</h3>
+        <table>
+            <tr>
+                <th>Название проекта</th>
+                <th>Описание</th>
+                <th>Технологии</th>
+            </tr>
+            <tr>
+                <td>Менеджер задач</td>
+                <td>Веб-приложение для управления задачами</td>
+                <td>React, Node.js</td>
+            </tr>
+            <tr>
+                <td>Прогнозатор ML</td>
+                <td>Прогнозирующая модель</td>
+                <td>Python, Scikit-learn</td>
+            </tr>
+        </table>
+        <img src="/photo/1.png" alt="Скриншот проекта" width="800" height="600">
+    </section>
+
+    <section id="resume">
+        <h2>Резюме</h2>
+        <p>Разработчик программного обеспечения в Компании A (2025 - Настоящее время). Разрабатывал веб-приложения и поддерживал кодовые базы.</p>
+        <h3>Достижения</h3>
+        <ul>
+            <li>Руководил командным проектом, который был завершен на 2 недели раньше срока</li>
+            <li>Оптимизировал производительность веб-приложения на 30%, сократив время загрузки страниц</li>
+            <li>Выигрывал внутренний хакатон с проектом AI-ассистента</li>
+            <li>Разработал открытый инструмент для автоматизации тестов, который скачали более 500 раз на GitHub</li>
+            <li>Получил сертификацию AWS Certified Developer</li>
+        </ul>
+        <h3>Таблица опыта</h3>
+        <table>
+            <tr>
+                <th>Должность</th>
+                <th>Компания</th>
+                <th>Период</th>
+            </tr>
+            <tr>
+                <td>Разработчик программного обеспечения</td>
+                <td>Компания A</td>
+                <td>2025 - Настоящее время</td>
+            </tr>
+            <tr>
+                <td>Стажёр</td>
+                <td>Компания B</td>
+                <td>2020 - 2021</td>
+            </tr>
+        </table>
+        <h3>Сертификации и навыки</h3>
+        <ul>
+            <li>AWS Certified Developer - Associate (2024)</li>
+            <li>Google Professional Data Engineer (2023)</li>
+            <li>Oracle Certified Java Programmer (2022)</li>
+            <li>Владение языками: Украинский (родной), Английский (свободно), Русский (средний)</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Контакты</h2>
+        <p>Email: <a href="mailto:zhovnodii.arthem@kitz.nau.edu.ua">zhovnodii.arthem@kitz.nau.edu.ua</a></p>
+        <p>Телефон: +000000000000</p>
+        <h3>Социальные ссылки</h3>
+        <ul>
+            <li><a href="https://github.com">GitHub</a></li>
+        </ul>
+        <h3>Таблица контактных данных</h3>
+        <table>
+            <tr>
+                <th>Метод</th>
+                <th>Детали</th>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>zhovnodii.arthem@kitz.nau.edu.ua</td>
+            </tr>
+            <tr>
+                <td>Телефон</td>
+                <td>+00000000000</td>
+            </tr>
+        </table>
+    </section>
+
+    <footer>
+        <p>© 2025 Бла-бла. Все права защищены.</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
